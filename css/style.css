@@ -1,0 +1,160 @@
+/* ==========================================================================
+   1. RESET Y ESTILOS GENERALES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ebf0f7;
+    /* Fondo azul grisáceo suave */
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+/* ==========================================================================
+   2. CONTENEDOR PRINCIPAL (CARD)
+   ========================================================================== */
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    border-radius: 24px;
+    padding: 32px 36px 40px;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 20px 40px -15px rgba(0, 0, 0, 0.07);
+    text-align: center;
+}
+
+/* ==========================================================================
+   3. MENÚ DE NAVEGACIÓN SUPERIOR
+   ========================================================================== */
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #64748b;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #0f172a;
+}
+
+/* Enlace activo con línea azul */
+.nav-link.active {
+    color: #0f172a;
+    font-weight: 700;
+    border-bottom: 2.5px solid #4f46e5;
+}
+
+/* ==========================================================================
+   4. AVATAR / FOTO DE PERFIL
+   ========================================================================== */
+.avatar-container {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(180deg, #dbeafe 0%, #ede9fe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================================================================
+   5. TEXTOS Y JERARQUÍA
+   ========================================================================== */
+.profile-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.profile-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 16px;
+}
+
+.divider {
+    width: 44px;
+    height: 3px;
+    background-color: #818cf8;
+    border-radius: 99px;
+    margin: 0 auto 20px auto;
+}
+
+.profile-bio {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #475569;
+    max-width: 420px;
+    margin: 0 auto 28px auto;
+}
+
+/* ==========================================================================
+   6. BOTONES DE REDES SOCIALES
+   ========================================================================== */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #ffffff;
+    border: 1.5px solid #c7d2fe;
+    border-radius: 12px;
+    padding: 13px 20px;
+    text-decoration: none;
+    color: #0f172a;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    color: #4f46e5;
+    flex-shrink: 0;
+}
+
+.social-btn:hover {
+    background-color: #f5f7ff;
+    border-color: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.08);
+}
