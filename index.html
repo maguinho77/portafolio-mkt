@@ -12,16 +12,19 @@
     <!-- Tipografía Outfit desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Librería de animaciones AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
     <!-- TARJETA PRINCIPAL -->
-    <main class="card">
+    <main class="card" data-aos="fade-up" data-aos-duration="850">
 
         <!-- 1. Menú de Navegación Superior -->
-        <header>
+        <header data-aos="fade-down" data-aos-delay="100">
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link active">Inicio</a>
                 <a href="proyectos.html" class="nav-link">Proyectos</a>
@@ -30,26 +33,26 @@
         </header>
 
         <!-- 2. Avatar / Foto de Perfil -->
-        <div class="avatar-container">
+        <div class="avatar-container" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
             <img src="img/avatar.jpg" alt="Foto de perfil de Lucas Caballeria" class="avatar-img">
         </div>
 
         <!-- 3. Información Personal -->
-        <h1 class="profile-name">Lucas Caballeria</h1>
-        <p class="profile-title">Ingeniero en Marketing · Diplomado en joseo · Titulado en generar dinero</p>
+        <h1 class="profile-name" data-aos="fade-up" data-aos-delay="300">Lucas Caballeria</h1>
+        <p class="profile-title" data-aos="fade-up" data-aos-delay="350">Ingeniero en Marketing · Diplomado en joseo · Titulado en generar dinero</p>
 
         <!-- Línea decorativa y distintivo de marca -->
-        <div class="divider"></div>
-        <span class="profile-tag">@4.magos</span>
+        <div class="divider" data-aos="fade-up" data-aos-delay="400"></div>
+        <span class="profile-tag" data-aos="zoom-in" data-aos-delay="450">@4.magos</span>
 
         <!-- 4. Biografía -->
-        <p class="profile-bio">
+        <p class="profile-bio" data-aos="fade-up" data-aos-delay="500">
             Me apasiona el marketing digital, el desarrollo de marcas y el comercio deportivo.
         </p>
 
         <!-- 5. Botones de Redes Sociales / Contacto -->
         <section class="social-links">
-            <a href="https://www.instagram.com/p/Dclc0QiOh9T/" target="_blank" class="social-btn">
+            <a href="https://www.instagram.com/p/Dclc0QiOh9T/" target="_blank" class="social-btn" data-aos="fade-up" data-aos-delay="550">
                 <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -59,7 +62,7 @@
                 <span>Instagram</span>
             </a>
 
-            <a href="https://linkedin.com" target="_blank" class="social-btn">
+            <a href="https://linkedin.com" target="_blank" class="social-btn" data-aos="fade-up" data-aos-delay="650">
                 <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -69,7 +72,7 @@
                 <span>LinkedIn</span>
             </a>
 
-            <a href="https://whatsapp.com" target="_blank" class="social-btn">
+            <a href="https://whatsapp.com" target="_blank" class="social-btn" data-aos="fade-up" data-aos-delay="750">
                 <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path
@@ -81,12 +84,21 @@
         </section>
 
         <!-- 6. Pie de página semántico -->
-        <footer class="site-footer">
+        <footer class="site-footer" data-aos="fade-up" data-aos-delay="800">
             <p>© 2026 4.magos · Todos los derechos reservados</p>
         </footer>
 
     </main>
 
+    <!-- Scripts de la librería AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+    </script>
 </body>
 
 </html>

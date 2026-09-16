@@ -13,33 +13,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Librería de animaciones AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
     <!-- TARJETA PRINCIPAL (CONTACTO) -->
-    <main class="card card-large">
+    <main class="card card-large" data-aos="fade-up" data-aos-duration="850">
 
         <!-- 1. Menú de Navegación Superior -->
         <header>
-            <nav class="nav-menu">
+            <nav class="nav-menu" data-aos="fade-down" data-aos-delay="100">
                 <a href="index.html" class="nav-link">Inicio</a>
                 <a href="proyectos.html" class="nav-link">Proyectos</a>
                 <a href="contacto.html" class="nav-link active">Contacto</a>
             </nav>
 
             <!-- 2. Encabezado de la Sección -->
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up" data-aos-delay="200">
                 <h1 class="section-title">Contacto</h1>
                 <div class="title-bar"></div>
                 <p class="section-subtitle">¿Tienes consultas sobre nuestras camisetas o pedidos especiales? ¡Escríbenos y te responderemos a la brevedad!</p>
             </div>
         </header>
 
-        <!-- 3. Contenedor de Formulario e Información -->
+        <!-- 3. Contenedor de Formulario e Información con animaciones laterales -->
         <section class="contact-container">
             <!-- Formulario -->
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! Te responderemos pronto.');">
+            <form class="contact-form" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800" onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! Te responderemos pronto.');">
                 <div class="form-group">
                     <label for="name" class="form-label">Nombre</label>
                     <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre completo" required>
@@ -65,7 +68,7 @@
             </form>
 
             <!-- Tarjeta Lateral de Información -->
-            <aside class="contact-info-card">
+            <aside class="contact-info-card" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
                 <div class="info-icon-wrapper">
                     <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -81,12 +84,21 @@
         </section>
 
         <!-- 4. Pie de página semántico -->
-        <footer class="site-footer">
+        <footer class="site-footer" data-aos="fade-up" data-aos-delay="500">
             <p>© 2026 4.magos · Todos los derechos reservados</p>
         </footer>
 
     </main>
 
+    <!-- Scripts de la librería AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+    </script>
 </body>
 
 </html>
