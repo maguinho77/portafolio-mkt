@@ -21,29 +21,35 @@
     <main class="card card-large">
 
         <!-- 1. Menú de Navegación Superior -->
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="proyectos.html" class="nav-link active">Proyectos</a>
-            <a href="contacto.html" class="nav-link">Contacto</a>
-        </nav>
+        <header>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="proyectos.html" class="nav-link active">Proyectos</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
 
-        <!-- 2. Encabezado de la Sección -->
-        <header class="section-header">
-            <h1 class="section-title">Proyectos</h1>
-            <div class="title-bar"></div>
-            <p class="section-subtitle">Tienda oficial de camisetas exclusivas y colecciones deportivas de alta calidad.</p>
+            <!-- 2. Encabezado de la Sección -->
+            <div class="section-header">
+                <h1 class="section-title">Proyectos & Colecciones</h1>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">Tienda oficial de camisetas exclusivas y colecciones deportivas de alta calidad.</p>
+            </div>
         </header>
 
-        <!-- 3. Catálogo de Productos / Proyectos -->
-        <section class="products-list">
+        <!-- 3. Catálogo de Productos en Cuadrícula Responsiva -->
+        <section class="projects-grid">
 
             <!-- Producto 1: FC Barcelona x Kobe Bryant -->
             <article class="product-item">
+                <div class="product-img-box">
+                    <img src="img/camiseta-barcelona.jpg" alt="Camiseta FC Barcelona x Kobe Bryant" class="product-photo">
+                    <span class="price-chip">$19.990</span>
+                </div>
                 <div class="product-info">
                     <span class="product-badge badge-purple">Edición Especial</span>
-                    <h2 class="product-name">Camiseta FC Barcelona x Kobe Bryant</h2>
+                    <h2 class="product-name">FC Barcelona x Kobe Bryant</h2>
                     <p class="product-desc">
-                        Edición tributo Mamba Negra con detalles en morado profundo, escudo iridiscente con efecto tornasol y detalles de Spotify en dorado.
+                        Edición tributo Mamba Negra con detalles en morado profundo, escudo iridiscente con efecto tornasol y detalles dorados.
                     </p>
                     <div class="product-pricing">
                         <span class="price-value">$19.990</span>
@@ -61,19 +67,19 @@
                         <span class="sizes-text">Tallas: S · M · L · XL</span>
                     </div>
                 </div>
-                <div class="product-img-box">
-                    <img src="img/camiseta-barcelona.jpg" alt="Camiseta FC Barcelona x Kobe Bryant" class="product-photo">
-                    <span class="price-chip">$19.990</span>
-                </div>
             </article>
 
             <!-- Producto 2: PSG Blanca Visitante -->
             <article class="product-item">
+                <div class="product-img-box">
+                    <img src="img/camiseta-psg.jpg" alt="Camiseta Paris Saint-Germain PSG" class="product-photo">
+                    <span class="price-chip">$19.990</span>
+                </div>
                 <div class="product-info">
                     <span class="product-badge badge-blue">Nueva Temporada</span>
-                    <h2 class="product-name">Camiseta Paris Saint-Germain (PSG)</h2>
+                    <h2 class="product-name">Paris Saint-Germain (PSG)</h2>
                     <p class="product-desc">
-                        Camiseta de visita blanca con la clásica franja central en degradé rojo y azul, cuello estructurado y patrocinador Qatar Airways oficial.
+                        Camiseta de visita blanca con la clásica franja central en degradé rojo y azul, cuello estructurado y patrocinio oficial.
                     </p>
                     <div class="product-pricing">
                         <span class="price-value">$19.990</span>
@@ -91,17 +97,17 @@
                         <span class="sizes-text">Tallas: S · M · L · XL</span>
                     </div>
                 </div>
-                <div class="product-img-box">
-                    <img src="img/camiseta-psg.jpg" alt="Camiseta Paris Saint-Germain PSG" class="product-photo">
-                    <span class="price-chip">$19.990</span>
-                </div>
             </article>
 
             <!-- Producto 3: Boca Juniors 120 Aniversario -->
             <article class="product-item">
+                <div class="product-img-box">
+                    <img src="img/camiseta-boca.jpg" alt="Camiseta Boca Juniors 120 Aniversario" class="product-photo">
+                    <span class="price-chip">$19.990</span>
+                </div>
                 <div class="product-info">
-                    <span class="product-badge badge-gold">120 Años Conmemorativa</span>
-                    <h2 class="product-name">Camiseta Boca Juniors (CABJ)</h2>
+                    <span class="product-badge badge-gold">120 Años</span>
+                    <h2 class="product-name">Boca Juniors (CABJ)</h2>
                     <p class="product-desc">
                         Camiseta conmemorativa de 120 años de historia azul y oro, con escudo especial retro, líneas de diseño vintage y patrocinio Betsson.
                     </p>
@@ -121,13 +127,14 @@
                         <span class="sizes-text">Tallas: S · M · L · XL</span>
                     </div>
                 </div>
-                <div class="product-img-box">
-                    <img src="img/camiseta-boca.jpg" alt="Camiseta Boca Juniors 120 Aniversario" class="product-photo">
-                    <span class="price-chip">$19.990</span>
-                </div>
             </article>
 
         </section>
+
+        <!-- 4. Pie de página semántico -->
+        <footer class="site-footer">
+            <p>© 2026 4.magos · Todos los derechos reservados</p>
+        </footer>
 
     </main>
 
